@@ -1,0 +1,36 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+    &__item + &__item {
+        margin-left: 50px;
+    }
+
+    &__link {
+        color: $primary-text-color;
+        display: flex;
+        padding: 12px 0;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include font(500, 14px, 1.14, 0.02em);
+        text-decoration: none;
+        &:hover, &:focus  {
+            color: $accent-color; 
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+        display: flex;
+        fill: currentColor;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            fill: currentColor;
+        }
+    }
+    
+}
+

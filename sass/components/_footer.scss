@@ -1,0 +1,30 @@
+.footer {
+    background-color: $accent-bg-color;
+    padding: 60px 0;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        @include font(null, 14px, 1.14, 0.03em);
+        color: $secondary-text-color;
+    }
+
+    &__soc {
+        margin-left: 70px;
+        margin-top: 12px;
+    }
+
+    &__subscription {
+        margin-top: 12px;
+        margin-left: 93px;
+    }
+}

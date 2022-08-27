@@ -1,0 +1,29 @@
+.address-list {
+    width: 231px;
+    font-style: normal;
+    @include font(null, 14px, 1.71, null);
+
+    &__item {
+        margin-left: auto;
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__link {
+        color: var(--primary-link-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+    
+        &--accent {
+            color: $secondary-text-color;
+            text-decoration: none;
+        }
+    
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+}
