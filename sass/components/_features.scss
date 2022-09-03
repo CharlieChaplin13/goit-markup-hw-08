@@ -1,18 +1,8 @@
 .features__list {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     margin: -15px;
-   
-    @media screen and (max-width:1199px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    @media screen and (min-width:1200px) {
-        display: flex;
-    }
 }
-
 
 .features__item {
     margin: 15px;
@@ -41,10 +31,6 @@
     height: 120px;
     margin-bottom: 30px;
     background-color: $secondary-bg-color;
-
-    @media screen and (width:768px) {
-        width: 50%;
-    }
 }
 
 .features__title {

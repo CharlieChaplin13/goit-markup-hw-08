@@ -1,15 +1,100 @@
 header {
+    // position: relative;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     border-bottom: 1px solid #ECECEC;
+    // background-color: aquamarine;
     background-color: $primary-bg-color;
     z-index: 100;
 }
 
 // .header-container {
-//     // display: flex;
-//     // align-items: center;   
+//     display: flex;
+//     align-items: center;   
 // }
 
+/* Навигация по сайту */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    // &__list {
+    //     // display: flex;
+    //     margin-left: 93px;
+    // }
+    
+    // &__link {
+    //     position: relative;
+    //     display: block;
+    //     padding: 32px 0;
+    //     color: $title-text-color;
+    //     transition-property: color, background-color;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //     @include font(500, 14px, 1.14, 0.02em);
+    //     text-decoration: none;
+    
+    //     &:hover, &:focus {
+    //         color: $accent-color;
+    //     }   
+    
+    //     &.current::after {
+    //         content: '';
+    //         position: absolute;
+    //         left: 0px;
+    //         bottom: -1px;
+    //         display: block;
+    //         width: 100%;
+    //         height: 4px;
+    //         border-radius: 2px;
+    //         background-color: $accent-color;
+    //     }
+    // }
+
+    // &__item + &__item {
+    //     margin-left: 50px;
+    // } 
+}
+
+
+
+
+.menu__container {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    height: 400px;
+    // background-color: aqua;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu__button .menu__icon-cross {
+    display: none;
+}
+
+.menu__button.is-open .menu__icon-cross {
+    display: block;
+}
+
+.menu__button.is-open .menu__icon-menu {
+    display: none;
+}

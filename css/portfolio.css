@@ -7,6 +7,9 @@ body {
   color: #757575;
   font-family: "Roboto", sans-serif;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .list, h1, h2, h3, h4, h5, h6, p {
   padding: 0;
@@ -120,6 +123,45 @@ header {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
   z-index: 100;
+}
+
+/* Навигация по сайту */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+.menu__container.is-open {
+  display: block;
+}
+
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .menu__icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .menu__icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .menu__icon-menu {
+  display: none;
 }
 
 .logo {
