@@ -6,7 +6,6 @@ body {
   background-color: #FFFFFF;
   color: #757575;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
 }
 
 .list, h1, h2, h3, h4, h5, h6, p {
@@ -48,6 +47,7 @@ img {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -101,12 +101,13 @@ img {
   margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1.17;
   }
 }
