@@ -1,5 +1,4 @@
 .work {
-
     padding-top: 0;
     @media screen and (max-width:1199px) {
         display: none;
@@ -15,10 +14,6 @@
 
         & + & {
             margin-left: 30px;
-        }
-
-        @media screen and (min-width:768px) {
-            width: 50%;
         }
     }
 

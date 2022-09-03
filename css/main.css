@@ -502,11 +502,6 @@ header {
 .work-list__item + .work-list__item {
   margin-left: 30px;
 }
-@media screen and (min-width: 768px) {
-  .work-list__item {
-    width: 50%;
-  }
-}
 .work-list__thumb {
   position: absolute;
   bottom: 0;
