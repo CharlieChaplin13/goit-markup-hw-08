@@ -2,13 +2,13 @@
     background-color: $accent-bg-color;
     padding: 60px 0;
 
-    &-container {
-        display: flex;
-        justify-content: space-between;
-    }
+    // &-container {
+    //     display: flex;
+    //     // justify-content: space-between;
+    // }
 
     &__logo {
-        display: block;
+        // display: block;
         margin-bottom: 20px;
     }
 
@@ -19,12 +19,12 @@
     }
 
     &__soc {
-        margin-left: 70px;
+        // margin-left: 70px;
         margin-top: 12px;
     }
 
     &__subscription {
         margin-top: 12px;
-        margin-left: 93px;
+        // margin-left: 93px;
     }
 }
