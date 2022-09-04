@@ -126,12 +126,6 @@ header {
 }
 
 /* Навигация по сайту */
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .menu__container {
   display: none;
   position: absolute;
@@ -162,6 +156,12 @@ header {
 
 .menu__button.is-open .menu__icon-menu {
   display: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {

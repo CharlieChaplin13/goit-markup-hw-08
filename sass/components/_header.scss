@@ -17,6 +17,42 @@ header {
 
 /* Навигация по сайту */
 
+.menu__container {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    height: 400px;
+    // background-color: aqua;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu__button .menu__icon-cross {
+    display: none;
+}
+
+.menu__button.is-open .menu__icon-cross {
+    display: block;
+}
+
+.menu__button.is-open .menu__icon-menu {
+    display: none;
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -58,43 +94,4 @@ header {
     // &__item + &__item {
     //     margin-left: 50px;
     // } 
-}
-
-
-
-
-.menu__container {
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    height: 400px;
-    // background-color: aqua;
-
-    &.is-open {
-        display: block;
-    }
-}
-
-.menu__button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
-
-.menu__button .menu__icon-cross {
-    display: none;
-}
-
-.menu__button.is-open .menu__icon-cross {
-    display: block;
-}
-
-.menu__button.is-open .menu__icon-menu {
-    display: none;
 }

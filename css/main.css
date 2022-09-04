@@ -138,12 +138,21 @@ img {
   width: 100%;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
   background-color: #FFFFFF;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+    width: 609px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .modal {
     padding: 40px;
     width: 528px;
@@ -346,12 +355,6 @@ header {
 }
 
 /* Навигация по сайту */
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .menu__container {
   display: none;
   position: absolute;
@@ -382,6 +385,12 @@ header {
 
 .menu__button.is-open .menu__icon-menu {
   display: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -446,24 +455,45 @@ header {
 }
 
 .hero {
+  display: flex;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../images/hero/hero-bg-mob);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #2F303A;
-  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-desktop);
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /* Кнопка заказа*/
