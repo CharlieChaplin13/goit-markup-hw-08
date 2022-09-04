@@ -15,29 +15,21 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(.../images/hero-bg-mob);
+    url(.../images/hero/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: $accent-bg-color;
 
     @media screen and (min-width:768px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/hero-bg-tablet);
+        background-image: 
+        url(.../images/hero/hero-bg-tablet.jpg);
     }
 
     @media screen and (min-width:1200px) {
         // height: 600px;
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url(.../images/hero-bg-desktop);
+        background-image: 
+        url(.../images/hero/hero-bg-desktop.jpg);
     }
 
 }
