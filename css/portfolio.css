@@ -227,12 +227,17 @@ header {
 
 .filter__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: -4px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+  }
+}
 
-.filter__list .item + .item {
-  margin-left: 8px;
+.filter__list .item {
+  margin: 4px;
 }
 
 .filter__button {
@@ -260,14 +265,16 @@ header {
 .product__list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .product__item {
+  margin: 15px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .product__item {
-    width: 50%;
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 120px) {

@@ -60,13 +60,13 @@
                 <h1 class="section__title visually-hidden">Наші роботи</h1>
 
                 <!-- Фильтр -->
-                <ul class="filter__list list">
+                <!-- <ul class="filter__list list">
                     <li class="item"><button type="button" class="filter__button">Усі</button></li>
                     <li class="item"><button type="button" class="filter__button">Веб-сайти</button></li>
                     <li class="item"><button type="button" class="filter__button">Додатки</button></li>
                     <li class="item"><button type="button" class="filter__button">Дизайн</button></li>
                     <li class="item"><button type="button" class="filter__button">Маркетинг</button></li>
-                </ul>
+                </ul> -->
 
                 <!-- Примеры работ -->
                 <ul class="product__list list">
@@ -74,30 +74,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-1-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Ноутбук зі сторікою вебсайту" 
+                                    <source
+                                        srcset="
+                                        ../images/product/product-img-1-desktop.jpg    1x,
+                                        ../images/product/product-img-1-desktop.jpg-2x 2x
+                                        "
+                                        media="(min-width: 1200px)"
                                     />
-                                      <source
+                                    <source
+                                        srcset="
+                                        ../images/product/product-img-1-tab.jpg    1x,
+                                        ../images/product/product-img-1-tab.jpg-2x 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
                                         srcset="
                                         ../images/product/product-img-1-mob.jpg    1x,
                                         ../images/product/product-img-1-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(max-width: 767px)"
                                     />
-                                    <source
-                                        srcset="
-                                        ../images/product/product-img-1-tab.jpg       1x,
-                                        ../images/product/product-img-1-tab.jpg-2x 2x
-                                        "
-                                        media="min-width: 768px"
-                                    />
-                                    <source
-                                        srcset="
-                                        ../images/product/product-img-1-desktop.jpg       1x,
-                                        ../images/product/product-img-1-desktop.jpg-2x 2x
-                                        "
-                                        media="min-width: 1200px"
+                                    <img src="../images/product/product-img-1-desktop.jpg" 
+                                         class="team__img" 
+                                         alt="Ноутбук зі сторікою вебсайту" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -112,30 +112,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-2-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Постер New Orlean vs Golden Star" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-2-mob.jpg    1x,
-                                        ../images/product/product-img-2-mob.jpg-2x 2x
+                                        ../images/product/product-img-2-desktop.jpg    1x,
+                                        ../images/product/product-img-2-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-2-tab.jpg    1x,
                                         ../images/product/product-img-2-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-2-desktop.jpg    1x,
-                                        ../images/product/product-img-2-desktop.jpg-2x 2x
+                                        ../images/product/product-img-2-mob.jpg    1x,
+                                        ../images/product/product-img-2-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-2-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Постер New Orlean vs Golden Star" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -150,30 +150,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-3-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Логотип ресторану Seafood" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-3-mob.jpg    1x,
-                                        ../images/product/product-img-3-mob.jpg-2x 2x
+                                        ../images/product/product-img-3-desktop.jpg    1x,
+                                        ../images/product/product-img-3-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-3-tab.jpg    1x,
                                         ../images/product/product-img-3-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-3-desktop.jpg    1x,
-                                        ../images/product/product-img-3-desktop.jpg-2x 2x
+                                        ../images/product/product-img-3-mob.jpg    1x,
+                                        ../images/product/product-img-3-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-3-mob.jpg" 
+                                        class="team__img" 
+                                        alt="Логотип ресторану Seafood" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -188,30 +188,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-4-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Навушники" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-4-mob.jpg    1x,
-                                        ../images/product/product-img-4-mob.jpg-2x 2x
+                                        ../images/product/product-img-4-desktop.jpg    1x,
+                                        ../images/product/product-img-4-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-4-tab.jpg    1x,
                                         ../images/product/product-img-4-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-4-desktop.jpg    1x,
-                                        ../images/product/product-img-4-desktop.jpg-2x 2x
+                                        ../images/product/product-img-4-mob.jpg    1x,
+                                        ../images/product/product-img-4-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-4-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Навушники" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -226,30 +226,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-5-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Пакувальні коробки" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-5-mob.jpg    1x,
-                                        ../images/product/product-img-5-mob.jpg-2x 2x
+                                        ../images/product/product-img-5-desktop.jpg    1x,
+                                        ../images/product/product-img-5-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-5-tab.jpg    1x,
                                         ../images/product/product-img-5-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-5-desktop.jpg    1x,
-                                        ../images/product/product-img-5-desktop.jpg-2x 2x
+                                        ../images/product/product-img-5-mob.jpg    1x,
+                                        ../images/product/product-img-5-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-5-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Пакувальні коробки" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -264,30 +264,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-6-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Монітор з вебсайтом" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-6-mob.jpg    1x,
-                                        ../images/product/product-img-6-mob.jpg-2x 2x
+                                        ../images/product/product-img-6-desktop.jpg       1x,
+                                        ../images/product/product-img-6-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-6-tab.jpg    1x,
                                         ../images/product/product-img-6-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-6-desktop.jpg       1x,
-                                        ../images/product/product-img-6-desktop.jpg-2x 2x
+                                        ../images/product/product-img-6-mob.jpg    1x,
+                                        ../images/product/product-img-6-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-6-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Монітор з вебсайтом" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -302,30 +302,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-5-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Розворот журналу" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-7-mob.jpg    1x,
-                                        ../images/product/product-img-7-mob.jpg-2x 2x
+                                        ../images/product/product-img-7-desktop.jpg    1x,
+                                        ../images/product/product-img-7-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-7-tab.jpg    1x,
                                         ../images/product/product-img-7-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-7-desktop.jpg    1x,
-                                        ../images/product/product-img-7-desktop.jpg-2x 2x
+                                        ../images/product/product-img-7-mob.jpg    1x,
+                                        ../images/product/product-img-7-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-5-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Розворот журналу" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -340,30 +340,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-8-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Бирка" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-8-mob.jpg    1x,
-                                        ../images/product/product-img-8-mob.jpg-2x 2x
+                                        ../images/product/product-img-8-desktop.jpg    1x,
+                                        ../images/product/product-img-8-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-8-tab.jpg    1x,
                                         ../images/product/product-img-8-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-8-desktop.jpg    1x,
-                                        ../images/product/product-img-8-desktop.jpg-2x 2x
+                                        ../images/product/product-img-8-mob.jpg    1x,
+                                        ../images/product/product-img-8-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-8-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Бирка" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -378,30 +378,30 @@
                         <a href="" class="product__link">
                             <div class="product__thumb">
                                 <picture>
-                                    <img src="../images/product/product-img-9-mob.jpg" 
-                                         class="team__img" 
-                                         alt="Ноутбук з відкритим додатком" 
-                                    />
-                                      <source
+                                    <source
                                         srcset="
-                                        ../images/product/product-img-9-mob.jpg    1x,
-                                        ../images/product/product-img-9-mob.jpg-2x 2x
+                                        ../images/product/product-img-9-desktop.jpg    1x,
+                                        ../images/product/product-img-9-desktop.jpg-2x 2x
                                         "
-                                        media="min-width: 480px"
+                                        media="(min-width: 1200px)"
                                     />
                                     <source
                                         srcset="
                                         ../images/product/product-img-9-tab.jpg    1x,
                                         ../images/product/product-img-9-tab.jpg-2x 2x
                                         "
-                                        media="min-width: 768px"
+                                        media="(min-width: 768px)"
                                     />
                                     <source
                                         srcset="
-                                        ../images/product/product-img-9-desktop.jpg    1x,
-                                        ../images/product/product-img-9-desktop.jpg-2x 2x
+                                        ../images/product/product-img-9-mob.jpg    1x,
+                                        ../images/product/product-img-9-mob.jpg-2x 2x
                                         "
-                                        media="min-width: 1200px"
+                                        media="(max-width: 767px)"
+                                    />
+                                    <img src="../images/product/product-img-9-mob.jpg" 
+                                         class="team__img" 
+                                         alt="Ноутбук з відкритим додатком" 
                                     />
                                 </picture>
                                 <p class="product__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
