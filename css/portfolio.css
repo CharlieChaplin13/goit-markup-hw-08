@@ -271,7 +271,6 @@ header {
 .product__item {
   margin: 15px;
   width: 100%;
-  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .product__item {
