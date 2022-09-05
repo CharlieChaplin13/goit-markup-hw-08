@@ -13,14 +13,14 @@
     // flex-basis: calc((100% - 90px) / 3);
     margin: 15px;
     width: 100%;
-    // max-width: 450px;
+    max-width: 450px;
 
     @media screen and (min-width:768px) {
-        width: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
 
     @media screen and (min-width:120px) {
-        width: calc((100% - 3 * 30px) / 3);
+        flex-basis: calc((100% - 3 * 30px) / 3);
     }
    
 }
@@ -80,6 +80,7 @@
 }
 
 .product__text {
+    margin-bottom: auto;
     color: $primary-text-color;
     @include font(null, 16px, 1.88, null);
 }

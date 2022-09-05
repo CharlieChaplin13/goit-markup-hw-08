@@ -271,15 +271,16 @@ header {
 .product__item {
   margin: 15px;
   width: 100%;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .product__item {
-    width: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 120px) {
   .product__item {
-    width: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -338,6 +339,7 @@ header {
 }
 
 .product__text {
+  margin-bottom: auto;
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
