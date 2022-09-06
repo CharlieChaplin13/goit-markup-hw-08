@@ -31,16 +31,9 @@ header {
     }
 }
 
-// .header__contacts {
-//     @media screen and (max-width: 767px) {
-//         margin-bottom: 64px;
-//         margin-top: auto;
-//     }
-// }
-
-@media screen and (max-width: 767px) {
-    .header__contacts {
-        margin-top: auto;
+.header__contacts {
+    @media screen and (max-width: 767px) {
         margin-bottom: 64px;
+        margin-top: auto;
     }
 }

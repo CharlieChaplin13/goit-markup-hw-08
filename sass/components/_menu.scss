@@ -32,7 +32,7 @@
 }
 
 .menu.is-open {
-    display: flex;
+    display: block;
     opacity: 1;
     pointer-events: all;
     overflow: auto;

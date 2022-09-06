@@ -152,10 +152,11 @@ header {
 
 @media screen and (max-width: 767px) {
   .header__contacts {
-    margin-top: auto;
     margin-bottom: 64px;
+    margin-top: auto;
   }
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -176,6 +177,11 @@ header {
 }
 
 /* Навигация по сайту */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: block;
