@@ -14,18 +14,16 @@
     }
 
     &__item {
-           
-        @media screen and (min-width: 1200px) {
-            margin-left: 50px;
-        } 
-    
+        @media screen and (min-width: 767px) and (max-width: 1199px) {
+            flex-direction: column;
+        }
     }
 
     &__item + &__item {
         margin-bottom: 32px;
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            margin-bottom: 10px;
+            margin-top: 10px;
         } 
 
         @media screen and (min-width: 1200px) {
@@ -36,7 +34,6 @@
     &__link {
         color: $primary-text-color;
         display: flex;
-        padding: 12px 0;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,8 +50,11 @@
             position: relative;
             @include font(500, 14px, 1.14, 0.02em);
             font-weight: 500;
-
         } 
+
+        @media screen and (min-width: 1200px) {
+            padding: 12px 0;
+        }
     }
 
     &__icon {
