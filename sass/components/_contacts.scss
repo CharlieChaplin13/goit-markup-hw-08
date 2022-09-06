@@ -20,7 +20,9 @@
     }
 
     &__item + &__item {
-        margin-bottom: 32px;
+        @media screen and (max-width: 787px) {
+            margin-bottom: 32px;
+        }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-top: 10px;

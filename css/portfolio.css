@@ -130,10 +130,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 @media screen and (min-width: 768px) {
   .header-container {
     align-items: center;
+    height: 80px;
   }
 }
 
@@ -269,8 +271,10 @@ header {
     flex-direction: column;
   }
 }
-.contacts__item + .contacts__item {
-  margin-bottom: 32px;
+@media screen and (max-width: 787px) {
+  .contacts__item + .contacts__item {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item + .contacts__item {
