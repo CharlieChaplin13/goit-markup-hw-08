@@ -1080,6 +1080,12 @@ header {
   color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .subscription-form__input {
   display: flex;
   align-items: center;
