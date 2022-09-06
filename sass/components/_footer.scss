@@ -1,13 +1,24 @@
 .footer {
     background-color: $accent-bg-color;
     padding: 60px 0;
+    
 
-    // &-container {
-    //     display: flex;
-    //     // justify-content: space-between;
-    // }
+    &-container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 1199px) {
+            justify-content: center;
+        
+        }
+        @media screen and (min-width: 767px) {
+            justify-content: space-between;
+        
+        }
+    }
 
     &__logo {
+        display: flex;
         // display: block;
         margin-bottom: 20px;
     }
