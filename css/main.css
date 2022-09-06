@@ -381,10 +381,10 @@ header {
 
 @media screen and (max-width: 767px) {
   .header__contacts {
+    margin-top: auto;
     margin-bottom: 64px;
   }
 }
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -407,6 +407,7 @@ header {
 .menu {
   display: none;
   width: 100%;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .menu {
@@ -437,7 +438,7 @@ header {
 }
 
 .menu.is-open {
-  display: block;
+  display: flex;
   opacity: 1;
   pointer-events: all;
   overflow: auto;
@@ -471,6 +472,11 @@ header {
 
 .menu__button.is-open .menu__icon-menu {
   display: none;
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Навигация по сайту */

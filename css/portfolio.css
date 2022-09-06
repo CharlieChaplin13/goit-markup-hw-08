@@ -152,10 +152,10 @@ header {
 
 @media screen and (max-width: 767px) {
   .header__contacts {
+    margin-top: auto;
     margin-bottom: 64px;
   }
 }
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
