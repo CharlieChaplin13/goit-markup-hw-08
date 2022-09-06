@@ -128,6 +128,7 @@ header {
 
 .header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
@@ -144,6 +145,12 @@ header {
 @media screen and (min-width: 1200px) {
   .header__menu {
     margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    margin-bottom: 64px;
   }
 }
 
@@ -253,10 +260,8 @@ header {
     margin-left: 50px;
   }
 }
-@media screen and (max-width: 767px) {
-  .contacts__item + .contacts__item {
-    margin-bottom: 32px;
-  }
+.contacts__item + .contacts__item {
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item + .contacts__item {

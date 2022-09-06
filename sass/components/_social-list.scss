@@ -1,15 +1,48 @@
 .social-list {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: start;
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        // justify-content: center;
+    }
+    @media screen and (max-width: 767px) and (max-width: 420px) {
+        font-size: 12px;
+    }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.social-list__item 
+.social-list__item {
+    @include font(500, 18px, 1.22, 0.02em);
+  
+    &:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
+    &:nth-child(3) {
+        @media screen and (max-width: 399px) {
+            border-right: none;
+        }
+    }
+    &:nth-child(4) {
+        @media screen and (max-width: 399px) {
+            border-left: 1px solid rgba(33, 33, 33, 0.2);
+        }
+    }
+}
 
 .social-list__link {
-    @include font(500, 18px, 1.22, 0.02em);
     color: $accent-color;
+    text-decoration: none;
 }
+      
