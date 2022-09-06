@@ -1,35 +1,27 @@
 header {
-    // position: relative;
+    position: relative;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     border-bottom: 1px solid #ECECEC;
-    // background-color: aquamarine;
     background-color: $primary-bg-color;
     z-index: 100;
 }
 
-// .header-container {
-//     display: flex;
-//     align-items: center;   
-// }
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+}
 
-/* Навигация по сайту */
+.header__menu {
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+    }
 
-.menu__container {
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    height: 400px;
-    // background-color: aqua;
-
-    &.is-open {
-        display: block;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -39,59 +31,114 @@ header {
     padding: 0;
     border: none;
     background-color: transparent;
+    z-index: 101;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
 
-.menu__button .menu__icon-cross {
+.menu__button .menu__icon-close {
     display: none;
 }
 
-.menu__button.is-open .menu__icon-cross {
-    display: block;
-}
+.menu__button.is-open .menu__icon-close {
+        display: block;
+    }
 
-.menu__button.is-open .menu__icon-menu {
+    .menu__button.is-open .menu__icon-menu {
+        display: none;
+    }
+
+.menu {
     display: none;
+    width: 100%;
+    
+    &.is-open {
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+        overflow: auto;
+
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 48px 40px;
+            height: 100%; 
+            display: block;
+            background-color: $primary-bg-color;
+            pointer-events: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    // &__list {
-    //     // display: flex;
-    //     margin-left: 93px;
-    // }
-    
-    // &__link {
-    //     position: relative;
-    //     display: block;
-    //     padding: 32px 0;
-    //     color: $title-text-color;
-    //     transition-property: color, background-color;
-    //     transition-duration: 250ms;
-    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    //     @include font(500, 14px, 1.14, 0.02em);
-    //     text-decoration: none;
-    
-    //     &:hover, &:focus {
-    //         color: $accent-color;
-    //     }   
-    
-    //     &.current::after {
-    //         content: '';
-    //         position: absolute;
-    //         left: 0px;
-    //         bottom: -1px;
-    //         display: block;
-    //         width: 100%;
-    //         height: 4px;
-    //         border-radius: 2px;
-    //         background-color: $accent-color;
-    //     }
-    // }
+.navigation { 
+    &__list {
+         @media screen and (max-width: 767px) {
+            display: block;
+        }
 
-    // &__item + &__item {
-    //     margin-left: 50px;
-    // } 
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+    }
+
+    &__item + &__item {
+        // margin-left: 50px;
+
+
+        @media screen and (min-width: 768px) {
+            margin-left: 50px;
+        }
+    } 
+    
+    &__link {
+        // position: relative;
+        display: block;
+        padding: 32px 0;
+        color: $title-text-color;
+        transition-property: color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include font(500, 14px, 1.14, 0.02em);
+        text-decoration: none;
+
+        &:hover, &:focus {
+            color: $accent-color;
+        }  
+
+        @media screen and (max-width: 767px) {
+            @include font(500, 40px, 1.18, 0.02em);
+        }
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+            @include font(500, 14px, 1.14, 0.02em);
+            font-weight: 500;
+
+        } 
+    }
+
+    @media screen and (min-width: 768px) {
+        navigation__link.current::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: -1px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accent-color;
+        }
+    }
 }
