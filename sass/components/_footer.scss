@@ -4,18 +4,24 @@
     
 
     &-container {
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (max-width: 1199px) {
-            justify-content: center;
-        
-        }
-        @media screen and (min-width: 767px) {
+        @media screen and (min-width: 1200px) {
+            display: flex;
             justify-content: space-between;
-        
         }
     }
+
+    &__wrap {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          justify-content: space-between;
+      
+        //   padding-left: 61px;
+        //   padding-right: 74px;
+        }
+      
+        @media screen and (min-width: 768px) {
+          display: flex;
+        }
+      }
 
     &__logo {
         display: flex;
@@ -32,6 +38,10 @@
     &__soc {
         // margin-left: 70px;
         margin-top: 12px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 70px;
+          }
     }
 
     &__subscription {
