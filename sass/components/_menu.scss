@@ -4,7 +4,8 @@
     width: 100%;
     
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
+        
         top: 0;
         left: 0;
         padding: 48px 40px;
@@ -13,18 +14,18 @@
         pointer-events: none;
         // transform: translateY(-100%);
         // visibility: hidden;
-        // opacity: 0;
-        z-index: 101;
+        // opacity: 1;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 }
 
-.menu .is-open {
+.menu.is-open {
     display: block;
     opacity: 1;
     pointer-events: all;
