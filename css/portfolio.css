@@ -116,7 +116,6 @@ img {
 }
 
 header {
-  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -129,31 +128,17 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Навигация по сайту */
-.menu {
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    padding: 48px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: block;
-    background-color: #FFFFFF;
-    pointer-events: none;
-  }
-  .menu.is-open {
-    display: block;
-  }
-}
 @media screen and (min-width: 768px) {
-  .menu {
-    display: flex;
-    align-items: center;
+  .header__menu {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    margin-left: 93px;
   }
 }
 
@@ -163,11 +148,57 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 10;
+  z-index: 101;
+}
+.menu__button:hover, .menu__button:focus {
+  color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
+.menu__button .menu__icon-close {
+  display: none;
+}
+
+.menu__button.is-open .menu__icon-close {
+  display: block;
 }
 
 .menu__button.is-open .menu__icon-menu {
   display: none;
+}
+
+.menu {
+  display: none;
+  width: 100%;
+}
+.menu.is-open {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+  overflow: auto;
+}
+@media screen and (max-width: 767px) {
+  .menu.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    height: 100%;
+    display: block;
+    background-color: #FFFFFF;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -287,7 +318,7 @@ header {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item + .contacts__item {
     margin-bottom: 10px;
   }
@@ -328,7 +359,6 @@ header {
   }
 }
 .contacts__icon {
-  margin-right: 10px;
   display: flex;
   fill: currentColor;
   transition-property: fill;

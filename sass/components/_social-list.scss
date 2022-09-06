@@ -1,5 +1,6 @@
 .social-list {
     display: flex;
+    flex-direction: row;
 
     @media screen and (min-width:768px) {
         display: none;
@@ -9,6 +10,6 @@
 .social-list__item 
 
 .social-list__link {
-    @include font(500, 18px, 1.22, 0.02em, $accentColor);
+    @include mixim(500, 18px, 1.22, 0.02em);
     color: $accent-color;
 }

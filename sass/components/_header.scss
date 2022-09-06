@@ -1,5 +1,5 @@
 header {
-    position: relative;
+    // position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,11 @@ header {
 
     &:hover,
     &:focus {
-        color: $accentColor;
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none
     }
 }
 
@@ -62,7 +66,7 @@ header {
         overflow: auto;
 
         @media screen and (max-width: 767px) {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             padding: 48px 40px;
