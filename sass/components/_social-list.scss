@@ -10,6 +10,6 @@
 .social-list__item 
 
 .social-list__link {
-    @include mixim(500, 18px, 1.22, 0.02em);
+    @include font(500, 18px, 1.22, 0.02em);
     color: $accent-color;
 }

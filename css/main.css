@@ -357,8 +357,12 @@ header {
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -372,16 +376,73 @@ header {
   }
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo--color-dark {
+  color: #000000;
+}
+.logo--color-light {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.logo--accent {
+  color: #2196F3;
+}
+
+.menu {
+  display: none;
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    height: 100%;
+    background-color: #FFFFFF;
+    pointer-events: none;
+    z-index: 101;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu .is-open {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+  overflow: auto;
+  transform: translateX(0);
+}
+
 .menu__button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 101;
+  z-index: 102;
 }
 .menu__button:hover, .menu__button:focus {
   color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
 }
 
 .menu__button .menu__icon-close {
@@ -396,36 +457,7 @@ header {
   display: none;
 }
 
-.menu {
-  display: none;
-  width: 100%;
-}
-.menu.is-open {
-  display: block;
-  opacity: 1;
-  pointer-events: all;
-  overflow: auto;
-}
-@media screen and (max-width: 767px) {
-  .menu.is-open {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 48px 40px;
-    height: 100%;
-    display: block;
-    background-color: #FFFFFF;
-    pointer-events: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
+/* Навигация по сайту */
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: block;
@@ -487,32 +519,6 @@ header {
     border-radius: 2px;
     background-color: #2196F3;
   }
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.logo--color-dark {
-  color: #000000;
-}
-.logo--color-light {
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
-.logo--accent {
-  color: #2196F3;
-}
-
-/* Навигация по сайту */
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .contacts {
@@ -584,6 +590,7 @@ header {
   }
 }
 .contacts__icon {
+  margin-right: 10px;
   display: flex;
   fill: currentColor;
   transition-property: fill;
