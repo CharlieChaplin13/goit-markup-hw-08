@@ -2,6 +2,7 @@
     font-family: "Raleway", sans-serif;
     @include font(700, 26px, 1.19, 0.03em);
     text-decoration: none;
+    padding-right: 0;
 
     &--color-dark {
         color: $logo-text-color;

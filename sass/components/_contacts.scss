@@ -36,6 +36,7 @@
     &__link {
         color: $primary-text-color;
         display: flex;
+        align-items: center;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,8 +44,11 @@
         &:hover, &:focus  {
             color: $accent-color; 
         }
+        @media screen and (max-width: 479px) {
+            @include font(500, 28px, 1.18, 0.02em);
+        }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             @include font(500, 34px, 1.18, 0.02em);
         }
 
