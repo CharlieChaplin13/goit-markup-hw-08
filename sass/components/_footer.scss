@@ -1,9 +1,15 @@
 .footer {
     background-color: $accent-bg-color;
-    padding: 60px 0;
+    text-align: center;
     
 
     &-container {
+        padding: 60px 0;
+        @media screen  and (max-width:1199px) {
+            display: block;
+            justify-content: center;
+        }
+
         @media screen and (min-width: 1200px) {
             display: flex;
             justify-content: space-between;
@@ -11,22 +17,36 @@
     }
 
     &__wrap {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-          justify-content: space-between;
+        @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+            // display: flex;
+            justify-content: center;
+            .header__address {
+                margin-bottom: 60px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
       
         //   padding-left: 61px;
         //   padding-right: 74px;
         }
-      
-        @media screen and (min-width: 768px) {
-          display: flex;
-        }
-      }
+
 
     &__logo {
         display: flex;
+        text-align: center;
+        // justify-content: center;
         // display: block;
         margin-bottom: 20px;
+        margin: 0 auto;
     }
 
     &__title {
@@ -45,7 +65,9 @@
     }
 
     &__subscription {
+
         margin-top: 12px;
+        
         // margin-left: 93px;
     }
 }
