@@ -59,7 +59,10 @@
 .footer__soc {
     // margin-left: 70px;
     margin-top: 12px;
-    @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+    .footer__soc {
         margin-left: 70px;
     }
 }

@@ -676,12 +676,12 @@ header {
 .footer__soc {
   margin-top: 12px;
 }
+
 @media screen and (min-width: 768px) {
   .footer__soc {
     margin-left: 70px;
   }
 }
-
 .footer__subscription {
   margin-top: 12px;
 }
