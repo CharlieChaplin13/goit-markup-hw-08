@@ -920,12 +920,6 @@ header {
 .soc {
   display: block;
 }
-@media screen and (min-width: 1200px) {
-  .soc {
-    margin-left: 70px;
-    margin-top: 12px;
-  }
-}
 
 .socials {
   display: flex;
@@ -1034,7 +1028,6 @@ header {
 }
 
 .footer__wrap {
-  margin-bottom: 60px;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -1056,7 +1049,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
-    display: flex;
+    text-align: left;
   }
 }
 
@@ -1071,11 +1064,23 @@ header {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
+}
 
+.footer__soc {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer__soc {
-    margin-left: 70px;
     margin-top: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__soc {
+    margin-left: 70px;
   }
 }
 
@@ -1085,7 +1090,6 @@ header {
 
 .address {
   display: block;
-  justify-content: center;
 }
 
 .address-list {
@@ -1102,8 +1106,12 @@ header {
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
+@media screen and (min-width: 1200px) {
+  .address-list__item {
+    display: flex;
+  }
+}
 .address-list__link {
-  display: block;
   color: var(--primary-link-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -1125,8 +1133,8 @@ header {
   }
 }
 .subscription-form__input {
-  display: block;
   justify-content: center;
+  margin-bottom: 20px;
   width: 100%;
   max-width: 450px;
   height: 50px;
@@ -1150,8 +1158,6 @@ header {
 }
 
 .subscription-form__button {
-  margin-left: 12px;
-  display: flex;
   padding: 10px 28px;
   min-width: 200px;
 }

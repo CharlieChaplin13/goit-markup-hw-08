@@ -1,10 +1,5 @@
 .soc {
     display: block;
-
-    @media screen and (min-width: 1200px) {
-        margin-left: 70px;
-        margin-top: 12px;
-    }
 }
 
 .socials {
@@ -12,7 +7,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 
     &__item + &__item {
         margin-left: 10px;

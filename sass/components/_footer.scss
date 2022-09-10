@@ -15,7 +15,6 @@
 }
 
 .footer__wrap {
-    margin-bottom: 60px;
     justify-content: center;
     
     @media screen and (min-width: 768px) {
@@ -37,7 +36,7 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
-        display: flex;
+        text-align: left;
     }
 }
 
@@ -49,14 +48,22 @@
     margin-bottom: 20px;
     @include font(null, 14px, 1.14, 0.03em);
     color: $secondary-text-color;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer__soc {
+    margin-bottom: 60px;
     // margin-left: 70px;
 
     @media screen and (min-width: 768px) {
-        margin-left: 70px;
         margin-top: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
     }
 }
 
