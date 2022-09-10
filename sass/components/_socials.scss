@@ -17,6 +17,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: left;
+    }
 }
 
 .socials--color-dark .icon {
@@ -52,10 +56,6 @@
     }
 }
 
-// .footer.socials {
-//     display: flex;
-//     justify-content: center;
-// }
 
 
 

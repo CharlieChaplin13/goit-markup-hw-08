@@ -4,7 +4,7 @@
 }
 
 .footer-container {
-    padding: 60px 0;
+    padding: 60px 15px;
     display: block;
     justify-content: center;
 
@@ -17,15 +17,17 @@
 .footer__wrap {
     justify-content: center;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 60px;
   
     //   padding-left: 61px;
     //   padding-right: 74px;
     }
 
     @media screen and (min-width: 1200px) {
+        display: flex;
         justify-content: space-between;
     }
 }
@@ -42,6 +44,10 @@
 
 .footer__address {
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__title {
