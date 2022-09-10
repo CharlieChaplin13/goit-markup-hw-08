@@ -22,9 +22,8 @@
     padding: 40px 40px;
     margin: auto 15px;
 
-    width: 100%-30px;
-    max-width: 528px;
-    max-height: 581px;
+    width: 100%;
+    // max-height: 581px;
     border-radius: 4px;
 
     background-color: $primary-bg-color; 
@@ -32,6 +31,14 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
     }
 }
 
@@ -59,11 +66,11 @@
     }
 }
 
-.modal-form {
-    // display: block;
-    // text-align: center;
-    margin-bottom: 20px;
-}
+// .modal-form {
+//     // display: block;
+//     // text-align: center;
+//     margin-bottom: 20px;
+// }
 
 .modal-form__title {
     margin-bottom: 12px;
@@ -101,7 +108,6 @@
     &:focus{
         border-color: $accent-color;
     }
-
 }
 
 .input-wrap {
@@ -141,31 +147,34 @@
 
 .check {
     margin-bottom: 30px;
-    // display: flex;
-    flex-direction: wrap;
+    display: flex;
     justify-content: left;
+    // align-items: flex-start;
 }
 
-.check__text {
-    // display: flex;
-    // align-items: center;
+.check__label {
+    display: flex;
+    justify-content: left;
+    // align-items: flex-start;
     color: $primary-text-color;
     @include font(400, 14px, 1.71, 0.03em);
-    span {
-        width: 16px;
-        height: 15px;
-        margin-right: 7px;
-        border: 1px solid $logo-text-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-property: border-color, background-color, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
 .check__icon {
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid $logo-text-color;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    transition-property: border-color, background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.check__icon-check {
     fill: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -174,39 +183,45 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check__input:checked + .check__text .check__icon {
+.check__input:checked + .check__label .check__icon-check {
     fill: $primary-bg-color;
 }
 
-.check__input:checked + .check__text span {
+.check__input:checked + .check__label .check__icon {
     background-color: $accent-color;
     border: none;
 }
 
-.check__input:focus + .check__text span {
+.check__input:focus + .check__label .check__icon {
     border-color: $accent-color;
 }
 
-.check__button {
-    background-color: transparent;
-    border: transparent;
-    text-decoration: underline;
-    color: $accent-color;
-    @include font(400, 14px, 1.71, 0.03em);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: $button-hover-color;
-    }   
+.check__text {
+    justify-content: left;
+    // align-items: flex-start;
+    color: $primary-text-color;
+    @include font(400, 12px, 1.17, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+        @include font(null, 14px, 1.71, null);
+    }
 }
 
-.modal-form__button {
-    padding: 10px 52px; 
-    min-width: 200px;
-    min-width: 200px;
-}
+.check__link {
+        // align-items: center;
+        // background-color: transparent;
+        // border: transparent;
+        text-decoration: underline;
+        color: $accent-color;
+        // @include font(400, 12px, 1.17, 0.03em);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $button-hover-color;
+        } 
 
+    }
 
 
