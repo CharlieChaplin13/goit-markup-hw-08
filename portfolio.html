@@ -450,15 +450,16 @@
 
     </main>
 
-            <!-- Футер -->
-        <footer class="footer">
-            <div class="footer-container container">
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer__wrap">
                 <div class="address footer__address">
                     <!-- Логотип -->
                     <a href="./index.html" class="logo footer__logo logo--color-light"><span class="logo--accent">Web</span>Studio</a>
                     
                     <!-- Адрес и контакты -->
-                    <address>
+                    <address class="footer__address">
                         <ul class="address-list list">
                             <li class="address-list__item">
                                 <a href="https://goo.gl/maps/XjStZC7h4bTxzezK6" class="address-list__link address-list__link--accent" target="_blank" rel="noreferrer noopener">
@@ -508,27 +509,30 @@
                         </li>
                     </ul>
                 </div>
-    
-                <div class="subscription  footer__subscription">
-                    <h2 class="footer__title">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</h2>
-                    <form class="subscription-form">
-                        <input 
-                            type="email" 
-                            class="subscription-form__input" 
-                            name="footer-email" 
-                            placeholder="E-mail" 
-                        />
-                        <button type="submit" class="subscription-form__button btn">
-                            Підписатися
-                            <svg class="button__icon  button__icon--position-right icon" width="24px" height="24px">
-                                <use href="./images/icons.svg#send-message"></use>
-                                </svg>
-                        </button>
-                    </form>
-                </div>
-                
             </div>
-        </footer>
+            
+
+            <div class="subscription  footer__subscription">
+                <h2 class="footer__title">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</h2>
+                <form class="subscription-form">
+                    <input 
+                        type="email" 
+                        class="subscription-form__input" 
+                        name="footer-email" 
+                        placeholder="E-mail" 
+                    />
+                    <button type="submit" class="subscription-form__button btn">
+                        Підписатися
+                        <svg class="button__icon  button__icon--position-right icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#send-message"></use>
+                            </svg>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+    
 
     <script src="./js/modal.js"></script>
     <script src="./js/header.js"></script>
