@@ -20,10 +20,14 @@
     
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
   
     //   padding-left: 61px;
     //   padding-right: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
     }
 }
 
@@ -31,6 +35,10 @@
     display: block;
     justify-content: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer__address {
@@ -45,10 +53,10 @@
 
 .footer__soc {
     // margin-left: 70px;
-    margin-top: 12px;
 
     @media screen and (min-width: 768px) {
         margin-left: 70px;
+        margin-top: 12px;
     }
 }
 
