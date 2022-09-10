@@ -937,11 +937,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1200px) {
-  .socials {
-    justify-content: left;
-  }
-}
 
 .socials--color-dark .icon {
   fill: #FFFFFF;
@@ -1090,6 +1085,7 @@ header {
 @media screen and (min-width: 768px) {
   .footer__soc {
     margin-top: 12px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
