@@ -42,16 +42,15 @@
 .subscription-form__button {
     // margin-left: 12px;
     // display: flex;
-    display: block;
+    // display: block;
     margin: auto;
-    padding: 10px 28px;
+    // padding: 10px 28px;
     min-width: 200px;
-    text-align: center;
-    align-items: center;
+    // text-align: center;
+    // align-items: center;
 
     @media screen and (min-width: 1200px) {
         margin: 0 0 0 12px;
-
     }
 }
 
