@@ -15,15 +15,9 @@
 }
 
 .footer__wrap {
-    @media screen and (max-width:767px) {
-        margin-bottom: 60px;
-        display: block;
-        justify-content: center;
-        .header__address {
-            margin-bottom: 60px;
-        }
-    }
-
+    margin-bottom: 60px;
+    justify-content: center;
+    
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
@@ -34,8 +28,13 @@
 }
 
 .footer__logo {
+    display: block;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.footer__address {
+    margin-bottom: 60px;
 }
 
 .footer__title {
@@ -47,7 +46,6 @@
 .footer__soc {
     // margin-left: 70px;
     margin-top: 12px;
-    
 
     @media screen and (min-width: 768px) {
         margin-left: 70px;
