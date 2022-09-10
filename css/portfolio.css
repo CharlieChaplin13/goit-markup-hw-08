@@ -625,6 +625,7 @@ header {
 @media screen and (max-width: 1199px) {
   .footer-container {
     display: block;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -634,6 +635,10 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
+  .footer__wrap {
+    margin-bottom: 60px;
+    justify-content: center;
+  }
   .footer__wrap .header__address {
     margin-bottom: 60px;
   }
@@ -641,13 +646,20 @@ header {
 @media screen and (min-width: 768px) {
   .footer__wrap {
     display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
   }
 }
 .footer__logo {
   display: flex;
+  text-align: center;
   margin-bottom: 20px;
+  margin: 0 auto;
 }
 .footer__title {
   margin-bottom: 20px;

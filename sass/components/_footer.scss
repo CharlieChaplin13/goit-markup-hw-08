@@ -2,7 +2,6 @@
     background-color: $accent-bg-color;
     text-align: center;
     
-
     &-container {
         padding: 60px 0;
         @media screen  and (max-width:1199px) {
@@ -38,7 +37,7 @@
         //   padding-left: 61px;
         //   padding-right: 74px;
         }
-
+    }
 
     &__logo {
         display: flex;
@@ -65,9 +64,7 @@
     }
 
     &__subscription {
-
-        margin-top: 12px;
-        
         // margin-left: 93px;
+        margin-top: 12px;
     }
 }
