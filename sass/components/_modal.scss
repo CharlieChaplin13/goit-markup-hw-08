@@ -2,8 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 200;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
@@ -16,14 +16,13 @@
 }
 
 .modal {
+    padding: 40px 40px;
+    margin: auto auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px 40px;
-    margin: auto 15px;
 
-    width: 100%;
-    // max-height: 581px;
+    width: calc(100% - 30px);
     border-radius: 4px;
 
     background-color: $primary-bg-color; 
@@ -33,8 +32,9 @@
         transform: translate(-50%, -50%) scale(0);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         width: 450px;
+        height: 609px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -66,16 +66,10 @@
     }
 }
 
-// .modal-form {
-//     // display: block;
-//     // text-align: center;
-//     margin-bottom: 20px;
-// }
-
 .modal-form__title {
     margin-bottom: 12px;
     color: $title-text-color;
-    @include font(700, 20px, 1.15, null);
+    @include font(700, 20px, 1.15, 0.03em);
 }
 
 .modal-form__fields {
@@ -84,7 +78,7 @@
     margin-bottom: 20px;
 }
 
-.modal-form__field {
+.modal-form__field + .modal-form__field {
     margin-bottom: 10px;
 }
 
@@ -149,15 +143,18 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: left;
-    // align-items: flex-start;
+    align-items: center;
 }
 
 .check__label {
     display: flex;
-    justify-content: left;
-    // align-items: flex-start;
+    text-align: left;
     color: $primary-text-color;
     @include font(400, 14px, 1.71, 0.03em);
+
+    @media screen and (min-width: 480px) {
+        align-items: center;
+    }
 }
 
 .check__icon {
@@ -171,7 +168,6 @@
     transition-property: border-color, background-color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .check__icon-check {
@@ -198,7 +194,6 @@
 
 .check__text {
     justify-content: left;
-    // align-items: flex-start;
     color: $primary-text-color;
     @include font(400, 12px, 1.17, 0.03em);
 
@@ -208,20 +203,25 @@
 }
 
 .check__link {
-        // align-items: center;
-        // background-color: transparent;
-        // border: transparent;
-        text-decoration: underline;
-        color: $accent-color;
-        // @include font(400, 12px, 1.17, 0.03em);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            color: $button-hover-color;
-        } 
+    // align-items: center;
+    // background-color: transparent;
+    // border: transparent;
+    text-decoration: underline;
+    color: $accent-color;
+    // @include font(400, 12px, 1.17, 0.03em);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $button-hover-color;
+    } 
+ }
 
-    }
+ 
+.modal-form__button {
+    padding: 10px 52px; 
+    min-width: 200px;
+}
 
 

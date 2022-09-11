@@ -121,8 +121,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -135,12 +135,12 @@ img {
 }
 
 .modal {
+  padding: 40px 40px;
+  margin: auto auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px 40px;
-  margin: auto 15px;
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: 4px;
   background-color: #FFFFFF;
   transform: translate(-50%, -50%) scale(1);
@@ -149,9 +149,10 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -188,6 +189,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
 }
 
 .modal-form__fields {
@@ -196,7 +198,7 @@ img {
   margin-bottom: 20px;
 }
 
-.modal-form__field {
+.modal-form__field + .modal-form__field {
   margin-bottom: 10px;
 }
 
@@ -267,16 +269,22 @@ img {
   margin-bottom: 30px;
   display: flex;
   justify-content: left;
+  align-items: center;
 }
 
 .check__label {
   display: flex;
-  justify-content: left;
+  text-align: left;
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .check__label {
+    align-items: center;
+  }
 }
 
 .check__icon {
@@ -337,6 +345,11 @@ img {
 }
 .check__link:hover, .check__link:focus {
   color: #188CE8;
+}
+
+.modal-form__button {
+  padding: 10px 52px;
+  min-width: 200px;
 }
 
 header {
