@@ -41,9 +41,10 @@
 
 
 .subscription-form__button {
-    display: flexbox;
+    display: flex;
     margin: auto;
     min-width: 200px;
+    justify-content: center;
     align-items: center;
 
     @media screen and (min-width: 1200px) {

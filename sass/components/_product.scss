@@ -20,7 +20,9 @@
 
 .product__link {
     min-width: 100%;
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: inherit;
     transition-property: box-shadow;
@@ -65,6 +67,7 @@
 .product__card {
     padding: 20px 24px;
     border: 1px solid $border-color;
+    flex-grow: 1;
 }
 
 .product__title {
