@@ -6,6 +6,7 @@ body {
   background-color: #FFFFFF;
   color: #757575;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
 }
 body.modal-open {
   overflow: hidden;
@@ -303,6 +304,13 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.navigation__link:hover, .navigation__link:focus {
+  color: #2196F3;
+  cursor: pointer;
+}
+.navigation__link.current {
+  color: #2196F3;
+}
 @media screen and (max-width: 767px) {
   .navigation__link {
     font-weight: 500;
@@ -319,10 +327,6 @@ header {
     letter-spacing: 0.02em;
     font-weight: 500;
     padding: 32px 0;
-  }
-  .navigation__link:hover, .navigation__link:focus {
-    color: #2196F3;
-    cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) {
@@ -365,7 +369,7 @@ header {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 767px) {
   .contacts__item + .contacts__item {
     margin-bottom: 32px;
   }
@@ -391,6 +395,11 @@ header {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .contacts__link--accent {
+    color: #2196F3;
+  }
 }
 @media screen and (max-width: 479px) {
   .contacts__link {
